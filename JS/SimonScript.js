@@ -104,6 +104,9 @@ $("input[name='onoff']").change(function(){
 		moves=[];
 		timeout.forEach(x=>clearTimeout(x));
 		timeout=[];
+		count=0;
+		$(".counter > span:nth-child(1)").html(("0"+count).slice(-2,-1));
+		$(".counter > span:nth-child(2)").html(("0"+count).slice(-1));
 	}
 });
 $("input[name='strictCheck']").change(function(){
